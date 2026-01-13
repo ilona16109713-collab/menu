@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Pizzeria Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: #3b2b1f;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-wrapper {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #f5efe6;
+    border: 8px solid #8b5a2b;
+    padding: 30px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+.title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #5a2d18;
+}
+
+.title h2 {
+    margin: 5px 0 25px;
+    font-size: 36px;
+    color: #8b1e1e;
+    letter-spacing: 2px;
+}
+
+.columns {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+.section-title {
+    background: #8b1e1e;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    margin: 20px 0 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.item {
+    margin-bottom: 10px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 1px dotted #555;
+    margin: 0 6px;
+}
+
+.description {
+    font-size: 13px;
+    color: #555;
+    margin-left: 5px;
+}
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="menu-wrapper">
+
+    <div class="title">
+        <h1>Pizzeria</h1>
+        <h2>МЕНЮ</h2>
+    </div>
+
+    <div class="columns">
+
+        <!-- ЛІВА КОЛОНКА -->
+        <div class="column">
+
+            <div class="section-title">ПІЦИ</div>
+
+            <div class="item">
+                <div class="item-header">Маргарита <span class="dots"></span> 130 грн</div>
+                <div class="description">Томатний соус, моцарела, свіжий базилік</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Пепероні <span class="dots"></span> 150 грн</div>
+                <div class="description">Томатний соус, моцарела, пепероні</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Кватро Формаджі <span class="dots"></span> 170 грн</div>
+                <div class="description">Моцарела, пармезан, горгонзола, проволоне</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Прошутто е Фунгі <span class="dots"></span> 180 грн</div>
+                <div class="description">Моцарела, прошутто, печериці</div>
+            </div>
+
+            <div class="section-title">НАПОЇ</div>
+
+            <div class="item">
+                <div class="item-header">Безалкогольні <span class="dots"></span> 50 грн</div>
+                <div class="description">Coca-Cola, Fanta, Sprite</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Еспресо <span class="dots"></span> 35 грн</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Капучино <span class="dots"></span> 60 грн</div>
+            </div>
+
+        </div>
+
+        <!-- ПРАВА КОЛОНКА -->
+        <div class="column">
+
+            <div class="section-title">ПАСТА</div>
+
+            <div class="item">
+                <div class="item-header">Болоньєзе <span class="dots"></span> 160 грн</div>
+                <div class="description">Яловичий соус з томатами</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Фетучіні Альфредо <span class="dots"></span> 180 грн</div>
+                <div class="description">Вершковий соус, пармезан</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Лазанья <span class="dots"></span> 200 грн</div>
+                <div class="description">Мʼясний соус і бешамель</div>
+            </div>
+
+            <div class="section-title">САЛАТИ</div>
+
+            <div class="item">
+                <div class="item-header">Цезар <span class="dots"></span> 140 грн</div>
+                <div class="description">Курка, салат, соус Цезар</div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">Капрезе <span class="dots"></span> 130 грн</div>
+                <div class="description">Моцарела, томати, базилік</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
