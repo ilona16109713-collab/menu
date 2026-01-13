@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Піцерія — Меню</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: #5a3e2b;
+}
+
+.menu {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #f4efe8;
+  padding: 40px;
+  border: 8px solid #8b5a2b;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.columns {
+  display: flex;
+  gap: 40px;
+}
+
+.column {
+  width: 50%;
+}
+
+.section-title {
+  background: #8b2d2d;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 20px;
+  margin: 25px 0 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #555;
+  padding: 6px 0;
+}
+
+.price {
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+  <h1>🍕 Піцерія<br>МЕНЮ</h1>
+
+  <div class="columns">
+    <div class="column">
+      <div class="section-title">ПІЦИ</div>
+      <div class="item"><span>Маргарита</span><span class="price">130 грн</span></div>
+      <div class="item"><span>Пепероні</span><span class="price">150 грн</span></div>
+      <div class="item"><span>Кватро Формаджі</span><span class="price">170 грн</span></div>
+      <div class="item"><span>Прошутто е Фунгі</span><span class="price">180 грн</span></div>
+
+      <div class="section-title">НАПОЇ</div>
+      <div class="item"><span>Кола / Фанта</span><span class="price">50 грн</span></div>
+      <div class="item"><span>Еспресо</span><span class="price">35 грн</span></div>
+      <div class="item"><span>Капучино</span><span class="price">60 грн</span></div>
+    </div>
+
+    <div class="column">
+      <div class="section-title">ПАСТА</div>
+      <div class="item"><span>Болоньєзе</span><span class="price">160 грн</span></div>
+      <div class="item"><span>Фетучіні Альфредо</span><span class="price">180 грн</span></div>
+      <div class="item"><span>Пенне Аррабіата</span><span class="price">150 грн</span></div>
+
+      <div class="section-title">САЛАТИ</div>
+      <div class="item"><span>Цезар</span><span class="price">140 грн</span></div>
+      <div class="item"><span>Капрезе</span><span class="price">130 грн</span></div>
+      <div class="item"><span>Грецький</span><span class="price">120 грн</span></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
