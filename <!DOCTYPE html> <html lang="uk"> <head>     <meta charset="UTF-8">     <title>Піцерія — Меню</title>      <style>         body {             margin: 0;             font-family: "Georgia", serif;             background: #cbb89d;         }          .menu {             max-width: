@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Піцерія — Меню</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #c7b299;
+    font-family: "Georgia", serif;
+}
+
+/* Фон паперу */
+.menu {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 50px;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    background-color: #f3ead7;
+    border: 12px solid #7a4a21;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+/* Заголовки */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+/* Колонки */
+.columns {
+    display: flex;
+    gap: 40px;
+}
+
+.column {
+    width: 50%;
+}
+
+/* Стрічки розділів */
+.section-title {
+    background: linear-gradient(#8b1e1e, #5a0f0f);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    margin: 30px 0 20px;
+    border: 2px solid #3b0b0b;
+}
+
+/* Позиції */
+.item {
+    margin-bottom: 18px;
+}
+
+.item-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 1px dotted #444;
+}
+
+.item-desc {
+    font-size: 14px;
+    color: #333;
+    margin-top: 4px;
+}
+
+/* Картинка піци */
+.footer-img {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.footer-img img {
+    width: 300px;
+    border: 6px solid #7a4a21;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+    <h1>Піцерія</h1>
+    <h2>МЕНЮ</h2>
+
+    <div class="columns">
+
+        <!-- ЛІВА КОЛОНКА -->
+        <div class="column">
+            <div class="section-title">ПІЦИ</div>
+
+            <div class="item">
+                <div class="item-title"><span>Маргарита</span><span>130 грн</span></div>
+                <div class="item-desc">Томатний соус, моцарела, базилік</div>
+            </div>
+
+            <div class="item">
+                <div class="item-title"><span>Пепероні</span><span>150 грн</span></div>
+                <div class="item-desc">Томатний соус, моцарела, пепероні</div>
+            </div>
+
+            <div class="item">
+                <div class="item-title"><span>Кватро Формаджі</span><span>170 грн</span></div>
+                <div class="item-desc">Моцарела, пармезан, горгонзола</div>
+            </div>
+
+            <div class="section-title">НАПОЇ</div>
+
+            <div class="item">
+                <div class="item-title"><span>Безалкогольні</span><span>50 грн</span></div>
+            </div>
+
+            <div class="item">
+                <div class="item-title"><span>Мінеральна вода</span><span>40 грн</span></div>
+            </div>
+        </div>
+
+        <!-- ПРАВА КОЛОНКА -->
+        <div class="column">
+            <div class="section-title">ПАСТА</div>
+
+            <div class="item">
+                <div class="item-title"><span>Болоньєзе</span><span>160 грн</span></div>
+                <div class="item-desc">Яловичий соус з томатами</div>
+            </div>
+
+            <div class="item">
+                <div class="item-title"><span>Фетучіні Альфр
