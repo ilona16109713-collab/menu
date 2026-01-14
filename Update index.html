@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Меню ресторану</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #f7efe3;
+    --dark: #2b1d14;
+    --red: #8b1e1e;
+    --gold: #d4b483;
+}
+
+body {
+    margin: 0;
+    background: #1e140f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== ВЕРХ ===== */
+header {
+    background: var(--red);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+/* ===== КАРТКА МЕНЮ ===== */
+.menu {
+    max-width: 900px;
+    margin: 30px auto;
+    background: var(--bg);
+    border: 10px solid var(--dark);
+    padding: 30px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.6);
+}
+
+.menu-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-title h1 {
+    margin: 0;
+    font-size: 46px;
+}
+
+.menu-title h2 {
+    margin: 5px 0 0;
+    color: var(--red);
+    letter-spacing: 4px;
+}
+
+/* ===== СЕКЦІЇ ===== */
+.section {
+    margin-top: 30px;
+}
+
+.section h3 {
+    background: var(--red);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+}
+
+/* ===== ПОЗИЦІЇ ===== */
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted #555;
+}
+
+.item-name {
+    font-weight: 500;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 700px) {
+    .menu {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .menu-title h1 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    🍕 Bella Forno
+</header>
+
+<div class="menu">
+
+    <div class="menu-title">
+        <h1>Меню</h1>
+        <h2>Наші страви</h2>
+    </div>
+
+    <div class="section">
+        <h3>ПІЦА</h3>
+        <div class="item"><span class="item-name">Маргарита</span><span class="price">130 грн</span></div>
+        <div class="item"><span class="item-name">Пепероні</span><span class="price">150 грн</span></div>
+        <div class="item"><span class="item-name">4 сири</span><span class="price">170 грн</span></div>
+    </div>
+
+    <div class="section">
+        <h3>НАПОЇ</h3>
+        <div class="item"><span class="item-name">Кава</span><span class="price">40 грн</span></div>
+        <div class="item"><span class="item-name">Лимонад</span><span class="price">45 грн</span></div>
+    </div>
+
+</div>
+
+</body>
+</html>
